@@ -1,7 +1,6 @@
 package com.koreait.rest_2024_05.boundedContext.member;
 
 import com.koreait.rest_2024_05.base.rsData.RsData;
-import com.koreait.rest_2024_05.member.entity.Member;
 import com.koreait.rest_2024_05.member.service.MemberService;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
@@ -19,8 +18,8 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping(value = "/member", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE)
-public class MemberController {
+@RequestMapping(value = "/api/v1/member", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE)
+public class Api1MemberController {
   private final MemberService memberService;
 
   @Data
